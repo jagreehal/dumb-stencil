@@ -11,9 +11,13 @@ export class DumbButton {
   @Event() clicked: EventEmitter;
   @Prop() disabled: boolean = false;
   @Prop() text: string;
+  @Prop() buttonClick: Function;
 
   handleClick = () => {
     this.clicked.emit();
+    if (this.buttonClick !== undefined){
+      this.buttonClick();
+    }
   }
 
   render() {

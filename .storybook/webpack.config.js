@@ -1,5 +1,3 @@
-const stencil = require('@stencil/webpack');
-
 module.exports = (storybookBaseConfig, configType, defaultConfig) => {
   defaultConfig.module.rules.push({
     test: [/\.(js)$/],

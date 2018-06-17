@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dumb-section should match snapshot 1`] = `
+<dumb-section
+  class="hydrated"
+  section-description="This is a description of what the section is"
+  section-title="Section Title"
+>
+  
+  
+  <section
+    class="c-section"
+  >
+    <header
+      class="c-section__header"
+    >
+      <h2
+        class="c-section__title"
+      >
+        Section Title
+      </h2>
+      <p
+        class="c-section__description"
+      >
+        This is a description of what the section is
+      </p>
+    </header>
+    <div
+      class="c-section__body"
+    >
+      
+      
+          This is the section body, where you can put any content or include other components.
+      
+    </div>
+  </section>
+</dumb-section>
+`;

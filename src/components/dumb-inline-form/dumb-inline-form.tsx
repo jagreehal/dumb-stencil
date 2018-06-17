@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Element, Prop } from '@stencil/core';
 
 @Component({
   tag: 'dumb-inline-form',
@@ -6,12 +6,18 @@ import { Component, Prop } from '@stencil/core';
   shadow: true
 })
 export class DumbInlineForm {
+  @Element() el: HTMLElement;
+
   @Prop() method: string;
   @Prop() action: string;
   @Prop() cta: string;
   @Prop() id: string;
   @Prop() label: string;
   @Prop() placeholder: string;
+
+  handleButtonClick = () => {
+    this.el.shadowRoot.querySelector('form').submit()
+  }
 
   render() {
     return (
@@ -26,7 +32,7 @@ export class DumbInlineForm {
           class="c-inline-form__input"
           placeholder={this.placeholder}
         />
-        <dumb-button text={this.cta} />
+        <dumb-button text={this.cta} buttonClick={this.handleButtonClick} />
       </form>
     );
   }

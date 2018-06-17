@@ -2,6 +2,7 @@ const path = require('path');
 const postcss = require('@stencil/postcss');
 
 exports.config = {
+  baseUrl: 'dumb-stencil',
   namespace: 'dumb-stencil',
   outputTargets: [{
     type: 'www'

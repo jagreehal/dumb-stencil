@@ -6,7 +6,7 @@ import { Component, Prop } from '@stencil/core';
   shadow: true
 })
 export class DumbFooter {
-  @Prop() companyName: string;
+  @Prop() companyName: string = "Company Name";
 
   render() {
     return (

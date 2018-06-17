@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+}
+
+.c-section {
+  padding: 2rem;
+}
+
+.c-section__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.c-section__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.c-section__description {
+  margin: 0;
+}

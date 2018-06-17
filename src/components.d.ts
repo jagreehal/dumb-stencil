@@ -34,6 +34,7 @@ declare global {
 
   namespace StencilComponents {
     interface DumbButton {
+      'buttonClick': Function;
       'disabled': boolean;
       'text': string;
     }
@@ -58,6 +59,7 @@ declare global {
   }
   namespace JSXElements {
     export interface DumbButtonAttributes extends HTMLAttributes {
+      'buttonClick'?: Function;
       'disabled'?: boolean;
       'onClicked'?: (event: CustomEvent) => void;
       'text'?: string;
@@ -351,6 +353,76 @@ declare global {
     export interface DumbPrimaryNavAttributes extends HTMLAttributes {
       'listItems'?: string | PrimaryNavItem[];
       'styleModifier'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface DumbSection {
+      'sectionDescription': string;
+      'sectionTitle': string;
+    }
+  }
+
+  interface HTMLDumbSectionElement extends StencilComponents.DumbSection, HTMLStencilElement {}
+
+  var HTMLDumbSectionElement: {
+    prototype: HTMLDumbSectionElement;
+    new (): HTMLDumbSectionElement;
+  };
+  interface HTMLElementTagNameMap {
+    'dumb-section': HTMLDumbSectionElement;
+  }
+  interface ElementTagNameMap {
+    'dumb-section': HTMLDumbSectionElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'dumb-section': JSXElements.DumbSectionAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DumbSectionAttributes extends HTMLAttributes {
+      'sectionDescription'?: string;
+      'sectionTitle'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface DumbTextPassage {
+      'first': string;
+      'last': string;
+    }
+  }
+
+  interface HTMLDumbTextPassageElement extends StencilComponents.DumbTextPassage, HTMLStencilElement {}
+
+  var HTMLDumbTextPassageElement: {
+    prototype: HTMLDumbTextPassageElement;
+    new (): HTMLDumbTextPassageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'dumb-text-passage': HTMLDumbTextPassageElement;
+  }
+  interface ElementTagNameMap {
+    'dumb-text-passage': HTMLDumbTextPassageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'dumb-text-passage': JSXElements.DumbTextPassageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DumbTextPassageAttributes extends HTMLAttributes {
+      'first'?: string;
+      'last'?: string;
     }
   }
 }

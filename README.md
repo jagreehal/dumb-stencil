@@ -12,22 +12,23 @@ Typescript as it's used by Stencil and PostCSS because who's got time for browse
 
 ## Stencil w/ Storybook Starter
 
-This repo uses the HTML fetaures of Storybook v4.
+This example uses the HTML features of Storybook v4.
 
 ## Using This Repo
 
 - `git clone https://github.com/jagreehal/dumb-stencil.git && cd dumb-stencil`
 - `npm install`
-- `npm start` will start the application and run storybook.
+- `npm start` will start the application
+- `npm run storybook` will start the storybook
 
 ## Building components
 
 Start building in the `src/components` folder with this folder structure
 
 ```js
-- ComponentName
-  - component-name.css
-  - component-name.stories.tsx
-  - component-name.tsx
-  - component-name.spec.tsx
+* component-name
+ - component-name.tsx
+ - component-name.css
+ - component-name.spec.tsx;
+ - component-name.stories.tsx
 ```

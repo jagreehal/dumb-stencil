@@ -4,11 +4,11 @@
     "version": "0.9.7"
   },
   "app": {
-    "namespace": "StencilApp",
-    "fsNamespace": "stencil-app",
-    "components": 1,
-    "entries": 1,
-    "bundles": 6
+    "namespace": "DumbStencil",
+    "fsNamespace": "dumb-stencil",
+    "components": 11,
+    "entries": 7,
+    "bundles": 42
   },
   "options": {
     "minifyJs": true,
@@ -19,84 +19,662 @@
   },
   "components": [
     {
-      "tag": "my-app",
+      "tag": "dumb-button",
+      "dependencies": [],
+      "dependencyOf": [
+        "dumb-inline-form"
+      ]
+    },
+    {
+      "tag": "dumb-inline-form",
+      "dependencies": [
+        "dumb-button"
+      ],
+      "dependencyOf": [
+        "dumb-footer",
+        "dumb-header"
+      ]
+    },
+    {
+      "tag": "dumb-card",
+      "dependencies": [],
+      "dependencyOf": [
+        "dumb-card-list"
+      ]
+    },
+    {
+      "tag": "dumb-card-list",
+      "dependencies": [
+        "dumb-card"
+      ],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-footer",
+      "dependencies": [
+        "dumb-inline-form"
+      ],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-hero",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-header",
+      "dependencies": [
+        "dumb-inline-form",
+        "dumb-logo",
+        "dumb-primary-nav"
+      ],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-logo",
+      "dependencies": [],
+      "dependencyOf": [
+        "dumb-header"
+      ]
+    },
+    {
+      "tag": "dumb-primary-nav",
+      "dependencies": [],
+      "dependencyOf": [
+        "dumb-header"
+      ]
+    },
+    {
+      "tag": "dumb-section",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-text-passage",
       "dependencies": [],
       "dependencyOf": []
     }
   ],
   "entries": [
     {
-      "entryId": "entry:my-app",
+      "entryId": "entry:dumb-button.dumb-inline-form",
       "components": [
         {
-          "tag": "my-app",
+          "tag": "dumb-button",
+          "dependencies": [],
+          "dependencyOf": [
+            "dumb-inline-form"
+          ]
+        },
+        {
+          "tag": "dumb-inline-form",
+          "dependencies": [
+            "dumb-button"
+          ],
+          "dependencyOf": [
+            "dumb-footer",
+            "dumb-header"
+          ]
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "c1uzqgnm.js",
+          "outputs": [
+            "dist/dumb-stencil/c1uzqgnm.js",
+            "www/build/dumb-stencil/c1uzqgnm.js"
+          ],
+          "size": 2077,
+          "gzip": 815
+        },
+        {
+          "fileName": "c1uzqgnm.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/c1uzqgnm.sc.js",
+            "www/build/dumb-stencil/c1uzqgnm.sc.js"
+          ],
+          "size": 2241,
+          "gzip": 843,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "c1uzqgnm.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/c1uzqgnm.es5.js",
+            "www/build/dumb-stencil/c1uzqgnm.es5.js"
+          ],
+          "size": 2823,
+          "gzip": 916,
+          "target": "es5"
+        },
+        {
+          "fileName": "c1uzqgnm.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/c1uzqgnm.sc.es5.js",
+            "www/build/dumb-stencil/c1uzqgnm.sc.es5.js"
+          ],
+          "size": 2987,
+          "gzip": 939,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "c1uzqgnm.js",
+          "outputs": [
+            "dist/esm/es5/c1uzqgnm.js"
+          ],
+          "size": 2751,
+          "gzip": 877,
+          "target": "es5"
+        },
+        {
+          "fileName": "c1uzqgnm.sc.js",
+          "outputs": [
+            "dist/esm/es5/c1uzqgnm.sc.js"
+          ],
+          "size": 2915,
+          "gzip": 902,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-button/dumb-button.js",
+        "dist/collection/components/dumb-inline-form/dumb-inline-form.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-card.dumb-card-list",
+      "components": [
+        {
+          "tag": "dumb-card",
+          "dependencies": [],
+          "dependencyOf": [
+            "dumb-card-list"
+          ]
+        },
+        {
+          "tag": "dumb-card-list",
+          "dependencies": [
+            "dumb-card"
+          ],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "mr22dmb3.js",
+          "outputs": [
+            "dist/dumb-stencil/mr22dmb3.js",
+            "www/build/dumb-stencil/mr22dmb3.js"
+          ],
+          "size": 1157,
+          "gzip": 527
+        },
+        {
+          "fileName": "mr22dmb3.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/mr22dmb3.sc.js",
+            "www/build/dumb-stencil/mr22dmb3.sc.js"
+          ],
+          "size": 1226,
+          "gzip": 545,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "mr22dmb3.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/mr22dmb3.es5.js",
+            "www/build/dumb-stencil/mr22dmb3.es5.js"
+          ],
+          "size": 1868,
+          "gzip": 634,
+          "target": "es5"
+        },
+        {
+          "fileName": "mr22dmb3.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/mr22dmb3.sc.es5.js",
+            "www/build/dumb-stencil/mr22dmb3.sc.es5.js"
+          ],
+          "size": 1937,
+          "gzip": 650,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "mr22dmb3.js",
+          "outputs": [
+            "dist/esm/es5/mr22dmb3.js"
+          ],
+          "size": 1792,
+          "gzip": 600,
+          "target": "es5"
+        },
+        {
+          "fileName": "mr22dmb3.sc.js",
+          "outputs": [
+            "dist/esm/es5/mr22dmb3.sc.js"
+          ],
+          "size": 1861,
+          "gzip": 617,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-card-list/dumb-card-list.js",
+        "dist/collection/components/dumb-card/dumb-card.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-footer",
+      "components": [
+        {
+          "tag": "dumb-footer",
+          "dependencies": [
+            "dumb-inline-form"
+          ],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "w0efamwy.js",
+          "outputs": [
+            "dist/dumb-stencil/w0efamwy.js",
+            "www/build/dumb-stencil/w0efamwy.js"
+          ],
+          "size": 879,
+          "gzip": 503
+        },
+        {
+          "fileName": "w0efamwy.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/w0efamwy.sc.js",
+            "www/build/dumb-stencil/w0efamwy.sc.js"
+          ],
+          "size": 933,
+          "gzip": 518,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "w0efamwy.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/w0efamwy.es5.js",
+            "www/build/dumb-stencil/w0efamwy.es5.js"
+          ],
+          "size": 1261,
+          "gzip": 602,
+          "target": "es5"
+        },
+        {
+          "fileName": "w0efamwy.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/w0efamwy.sc.es5.js",
+            "www/build/dumb-stencil/w0efamwy.sc.es5.js"
+          ],
+          "size": 1315,
+          "gzip": 616,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "w0efamwy.js",
+          "outputs": [
+            "dist/esm/es5/w0efamwy.js"
+          ],
+          "size": 1180,
+          "gzip": 564,
+          "target": "es5"
+        },
+        {
+          "fileName": "w0efamwy.sc.js",
+          "outputs": [
+            "dist/esm/es5/w0efamwy.sc.js"
+          ],
+          "size": 1234,
+          "gzip": 577,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-footer/dumb-footer.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-hero",
+      "components": [
+        {
+          "tag": "dumb-hero",
           "dependencies": [],
           "dependencyOf": []
         }
       ],
       "bundles": [
         {
-          "fileName": "hsqcy5gd.js",
+          "fileName": "kj9pwb0g.js",
           "outputs": [
-            "dist/stencil-app/hsqcy5gd.js",
-            "www/build/stencil-app/hsqcy5gd.js"
+            "dist/dumb-stencil/kj9pwb0g.js",
+            "www/build/dumb-stencil/kj9pwb0g.js"
           ],
-          "size": 641,
-          "gzip": 383
+          "size": 1033,
+          "gzip": 484
         },
         {
-          "fileName": "hsqcy5gd.sc.js",
+          "fileName": "kj9pwb0g.sc.js",
           "outputs": [
-            "dist/stencil-app/hsqcy5gd.sc.js",
-            "www/build/stencil-app/hsqcy5gd.sc.js"
+            "dist/dumb-stencil/kj9pwb0g.sc.js",
+            "www/build/dumb-stencil/kj9pwb0g.sc.js"
           ],
-          "size": 680,
-          "gzip": 395,
+          "size": 1129,
+          "gzip": 500,
           "scopedStyles": true
         },
         {
-          "fileName": "hsqcy5gd.es5.js",
+          "fileName": "kj9pwb0g.es5.js",
           "outputs": [
-            "dist/stencil-app/hsqcy5gd.es5.js",
-            "www/build/stencil-app/hsqcy5gd.es5.js"
+            "dist/dumb-stencil/kj9pwb0g.es5.js",
+            "www/build/dumb-stencil/kj9pwb0g.es5.js"
           ],
-          "size": 1037,
-          "gzip": 490,
+          "size": 1430,
+          "gzip": 592,
           "target": "es5"
         },
         {
-          "fileName": "hsqcy5gd.sc.es5.js",
+          "fileName": "kj9pwb0g.sc.es5.js",
           "outputs": [
-            "dist/stencil-app/hsqcy5gd.sc.es5.js",
-            "www/build/stencil-app/hsqcy5gd.sc.es5.js"
+            "dist/dumb-stencil/kj9pwb0g.sc.es5.js",
+            "www/build/dumb-stencil/kj9pwb0g.sc.es5.js"
           ],
-          "size": 1076,
-          "gzip": 500,
+          "size": 1526,
+          "gzip": 607,
           "target": "es5",
           "scopedStyles": true
         },
         {
-          "fileName": "hsqcy5gd.js",
+          "fileName": "kj9pwb0g.js",
           "outputs": [
-            "dist/esm/es5/hsqcy5gd.js"
+            "dist/esm/es5/kj9pwb0g.js"
           ],
-          "size": 952,
-          "gzip": 450,
+          "size": 1347,
+          "gzip": 554,
           "target": "es5"
         },
         {
-          "fileName": "hsqcy5gd.sc.js",
+          "fileName": "kj9pwb0g.sc.js",
           "outputs": [
-            "dist/esm/es5/hsqcy5gd.sc.js"
+            "dist/esm/es5/kj9pwb0g.sc.js"
           ],
-          "size": 991,
-          "gzip": 461,
+          "size": 1443,
+          "gzip": 569,
           "target": "es5",
           "scopedStyles": true
         }
       ],
       "inputs": [
-        "dist/collection/components/my-app/my-app.js"
+        "dist/collection/components/dumb-hero/dumb-hero.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-header.dumb-logo.dumb-primary-nav",
+      "components": [
+        {
+          "tag": "dumb-header",
+          "dependencies": [
+            "dumb-inline-form",
+            "dumb-logo",
+            "dumb-primary-nav"
+          ],
+          "dependencyOf": []
+        },
+        {
+          "tag": "dumb-logo",
+          "dependencies": [],
+          "dependencyOf": [
+            "dumb-header"
+          ]
+        },
+        {
+          "tag": "dumb-primary-nav",
+          "dependencies": [],
+          "dependencyOf": [
+            "dumb-header"
+          ]
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "ydg12ht3.js",
+          "outputs": [
+            "dist/dumb-stencil/ydg12ht3.js",
+            "www/build/dumb-stencil/ydg12ht3.js"
+          ],
+          "size": 2161,
+          "gzip": 821
+        },
+        {
+          "fileName": "ydg12ht3.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/ydg12ht3.sc.js",
+            "www/build/dumb-stencil/ydg12ht3.sc.js"
+          ],
+          "size": 2321,
+          "gzip": 853,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "ydg12ht3.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/ydg12ht3.es5.js",
+            "www/build/dumb-stencil/ydg12ht3.es5.js"
+          ],
+          "size": 3171,
+          "gzip": 925,
+          "target": "es5"
+        },
+        {
+          "fileName": "ydg12ht3.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/ydg12ht3.sc.es5.js",
+            "www/build/dumb-stencil/ydg12ht3.sc.es5.js"
+          ],
+          "size": 3331,
+          "gzip": 959,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "ydg12ht3.js",
+          "outputs": [
+            "dist/esm/es5/ydg12ht3.js"
+          ],
+          "size": 3118,
+          "gzip": 888,
+          "target": "es5"
+        },
+        {
+          "fileName": "ydg12ht3.sc.js",
+          "outputs": [
+            "dist/esm/es5/ydg12ht3.sc.js"
+          ],
+          "size": 3278,
+          "gzip": 922,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-header/dumb-header.js",
+        "dist/collection/components/dumb-logo/dumb-logo.js",
+        "dist/collection/components/dumb-primary-nav/dumb-primary-nav.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-section",
+      "components": [
+        {
+          "tag": "dumb-section",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "kqosepcc.js",
+          "outputs": [
+            "dist/dumb-stencil/kqosepcc.js",
+            "www/build/dumb-stencil/kqosepcc.js"
+          ],
+          "size": 1026,
+          "gzip": 427
+        },
+        {
+          "fileName": "kqosepcc.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/kqosepcc.sc.js",
+            "www/build/dumb-stencil/kqosepcc.sc.js"
+          ],
+          "size": 1121,
+          "gzip": 444,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "kqosepcc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/kqosepcc.es5.js",
+            "www/build/dumb-stencil/kqosepcc.es5.js"
+          ],
+          "size": 1423,
+          "gzip": 531,
+          "target": "es5"
+        },
+        {
+          "fileName": "kqosepcc.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/kqosepcc.sc.es5.js",
+            "www/build/dumb-stencil/kqosepcc.sc.es5.js"
+          ],
+          "size": 1518,
+          "gzip": 549,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "kqosepcc.js",
+          "outputs": [
+            "dist/esm/es5/kqosepcc.js"
+          ],
+          "size": 1343,
+          "gzip": 495,
+          "target": "es5"
+        },
+        {
+          "fileName": "kqosepcc.sc.js",
+          "outputs": [
+            "dist/esm/es5/kqosepcc.sc.js"
+          ],
+          "size": 1438,
+          "gzip": 513,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-section/dumb-section.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-text-passage",
+      "components": [
+        {
+          "tag": "dumb-text-passage",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "ieteauoo.js",
+          "outputs": [
+            "dist/dumb-stencil/ieteauoo.js",
+            "www/build/dumb-stencil/ieteauoo.js"
+          ],
+          "size": 439,
+          "gzip": 274
+        },
+        {
+          "fileName": "ieteauoo.sc.js",
+          "outputs": [
+            "dist/dumb-stencil/ieteauoo.sc.js",
+            "www/build/dumb-stencil/ieteauoo.sc.js"
+          ],
+          "size": 463,
+          "gzip": 282,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "ieteauoo.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/ieteauoo.es5.js",
+            "www/build/dumb-stencil/ieteauoo.es5.js"
+          ],
+          "size": 836,
+          "gzip": 375,
+          "target": "es5"
+        },
+        {
+          "fileName": "ieteauoo.sc.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/ieteauoo.sc.es5.js",
+            "www/build/dumb-stencil/ieteauoo.sc.es5.js"
+          ],
+          "size": 860,
+          "gzip": 381,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "ieteauoo.js",
+          "outputs": [
+            "dist/esm/es5/ieteauoo.js"
+          ],
+          "size": 760,
+          "gzip": 340,
+          "target": "es5"
+        },
+        {
+          "fileName": "ieteauoo.sc.js",
+          "outputs": [
+            "dist/esm/es5/ieteauoo.sc.js"
+          ],
+          "size": 784,
+          "gzip": 349,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-text-passage/dumb-text-passage.js"
       ],
       "encapsulations": [
         "shadow"
@@ -104,11 +682,53 @@
     }
   ],
   "sourceGraph": {
-    "src/components/my-app/my-app.stories.tsx": [
+    "src/components/dumb-button/dumb-button.stories.tsx": [
       "@storybook/addon-knobs",
       "@storybook/html"
     ],
-    "src/components/my-app/my-app.tsx": []
+    "src/components/dumb-button/dumb-button.tsx": [],
+    "src/components/dumb-card-list/dumb-card-list.stories.tsx": [
+      "@storybook/addon-knobs",
+      "@storybook/html"
+    ],
+    "src/components/dumb-card-list/dumb-card-list.tsx": [],
+    "src/components/dumb-card/dumb-card.stories.tsx": [
+      "@storybook/addon-knobs",
+      "@storybook/html"
+    ],
+    "src/components/dumb-card/dumb-card.tsx": [],
+    "src/components/dumb-footer/dumb-footer.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-footer/dumb-footer.tsx": [],
+    "src/components/dumb-header/dumb-header.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-header/dumb-header.tsx": [],
+    "src/components/dumb-hero/dumb-hero.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-hero/dumb-hero.tsx": [],
+    "src/components/dumb-inline-form/dumb-inline-form.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-inline-form/dumb-inline-form.tsx": [],
+    "src/components/dumb-logo/dumb-logo.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-logo/dumb-logo.tsx": [],
+    "src/components/dumb-primary-nav/dumb-primary-nav.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-primary-nav/dumb-primary-nav.tsx": [],
+    "src/components/dumb-section/dumb-section.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-section/dumb-section.tsx": [],
+    "src/components/dumb-text-passage/dumb-text-passage.stories.tsx": [
+      "@storybook/html"
+    ],
+    "src/components/dumb-text-passage/dumb-text-passage.tsx": []
   },
   "collections": []
 }
