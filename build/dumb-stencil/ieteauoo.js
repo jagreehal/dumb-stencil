@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+const{h:t}=window.DumbStencil;class e{render(){return t("div",{class:"c-text-passage"},t("slot",null))}static get is(){return"dumb-text-passage"}static get encapsulation(){return"shadow"}static get properties(){return{first:{type:String,attr:"first"},last:{type:String,attr:"last"}}}static get style(){return":host{display:-webkit-box;display:-ms-flexbox;display:flex}"}}export{e as DumbTextPassage};

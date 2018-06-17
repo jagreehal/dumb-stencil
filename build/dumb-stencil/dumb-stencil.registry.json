@@ -1,0 +1,43 @@
+{
+  "namespace": "DumbStencil",
+  "fsNamespace": "dumb-stencil",
+  "loader": "../dumb-stencil.js",
+  "global": "dumb-stencil.global.js",
+  "core": "dumb-stencil.ium3hvwk.js",
+  "corePolyfilled": "dumb-stencil.duyfjqoe.js",
+  "components": {
+    "dumb-button": {
+      "$": "c1uzqgnm"
+    },
+    "dumb-card": {
+      "$": "mr22dmb3"
+    },
+    "dumb-card-list": {
+      "$": "mr22dmb3"
+    },
+    "dumb-footer": {
+      "$": "w0efamwy"
+    },
+    "dumb-header": {
+      "$": "ydg12ht3"
+    },
+    "dumb-hero": {
+      "$": "kj9pwb0g"
+    },
+    "dumb-inline-form": {
+      "$": "c1uzqgnm"
+    },
+    "dumb-logo": {
+      "$": "ydg12ht3"
+    },
+    "dumb-primary-nav": {
+      "$": "ydg12ht3"
+    },
+    "dumb-section": {
+      "$": "z3a5fxfh"
+    },
+    "dumb-text-passage": {
+      "$": "ieteauoo"
+    }
+  }
+}
