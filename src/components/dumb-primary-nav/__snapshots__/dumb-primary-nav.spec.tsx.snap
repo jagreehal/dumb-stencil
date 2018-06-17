@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dumb-primary-nav should match snapshot 1`] = `
+<dumb-primary-nav
+  class="hydrated"
+  list-items="[{\\"href\\":\\"#\\",\\"text\\":\\"Nav Item 1\\"},{\\"href\\":\\"#\\",\\"text\\":\\"Nav Item 2\\"},{\\"href\\":\\"#\\",\\"text\\":\\"Nav Item 3\\"},{\\"href\\":\\"#\\",\\"text\\":\\"Nav Item 4\\"}]"
+>
+  
+  <nav
+    class="c-primary-nav"
+  >
+    <ul
+      class="c-primary-nav__list"
+    >
+      <li
+        class="c-primary-nav__item"
+      >
+        <a
+          href="#"
+        >
+          Nav Item 1
+        </a>
+      </li>
+      <li
+        class="c-primary-nav__item"
+      >
+        <a
+          href="#"
+        >
+          Nav Item 2
+        </a>
+      </li>
+      <li
+        class="c-primary-nav__item"
+      >
+        <a
+          href="#"
+        >
+          Nav Item 3
+        </a>
+      </li>
+      <li
+        class="c-primary-nav__item"
+      >
+        <a
+          href="#"
+        >
+          Nav Item 4
+        </a>
+      </li>
+    </ul>
+  </nav>
+</dumb-primary-nav>
+`;

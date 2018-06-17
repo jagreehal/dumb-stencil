@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dumb-header should match snapshot 1`] = `
+<dumb-header
+  class="hydrated"
+>
+  
+  <header
+    class="c-header"
+  >
+    <dumb-logo
+      href="#"
+      src="http://via.placeholder.com/120x60"
+    />
+    <dumb-primary-nav />
+    <dumb-inline-form
+      action="#"
+      cta="Search"
+      id="search-form"
+      label="Search the site"
+      method="post"
+      placeholder="Search this site"
+    />
+  </header>
+</dumb-header>
+`;

@@ -1,0 +1,12 @@
+:host {
+  display: grid;
+}
+
+.c-header {
+  background: #ddd;
+  display: inherit;
+  gap: 10px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  padding: 1rem 2rem;
+}

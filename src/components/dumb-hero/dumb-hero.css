@@ -1,0 +1,37 @@
+:host {
+  background: #eee;
+  display: block;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.c-hero {
+  background: #eee;
+  position: relative;
+}
+
+.c-hero__img {
+  display: block;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.c-hero__body {
+  bottom: 0;
+  left: 0;
+  padding: 3rem 2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.c-hero__title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.c-hero__description {
+  font-size: 1.4rem;
+  margin: 0;
+}

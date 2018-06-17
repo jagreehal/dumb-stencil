@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dumb-primary-nav should match snapshot 1`] = `
+<dumb-hero
+  class="hydrated"
+  hero-description="This is the hero description"
+  hero-img-alt="Alt Text"
+  hero-img-src="http://via.placeholder.com/1200x650"
+  hero-title="Hero Title"
+>
+  
+  
+      
+  <div
+    class="c-hero"
+  >
+    <img
+      alt="Alt Text"
+      class="c-hero__img"
+      src="http://via.placeholder.com/1200x650"
+    />
+    <div
+      class="c-hero__body"
+    >
+      <h2
+        class="c-hero__title"
+      >
+        Hero Title
+      </h2>
+      <p
+        class="c-hero__description"
+      >
+        This is the hero description
+      </p>
+    </div>
+  </div>
+</dumb-hero>
+`;

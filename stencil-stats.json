@@ -1,0 +1,114 @@
+{
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.9.7"
+  },
+  "app": {
+    "namespace": "StencilApp",
+    "fsNamespace": "stencil-app",
+    "components": 1,
+    "entries": 1,
+    "bundles": 6
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": true
+  },
+  "components": [
+    {
+      "tag": "my-app",
+      "dependencies": [],
+      "dependencyOf": []
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "entry:my-app",
+      "components": [
+        {
+          "tag": "my-app",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "hsqcy5gd.js",
+          "outputs": [
+            "dist/stencil-app/hsqcy5gd.js",
+            "www/build/stencil-app/hsqcy5gd.js"
+          ],
+          "size": 641,
+          "gzip": 383
+        },
+        {
+          "fileName": "hsqcy5gd.sc.js",
+          "outputs": [
+            "dist/stencil-app/hsqcy5gd.sc.js",
+            "www/build/stencil-app/hsqcy5gd.sc.js"
+          ],
+          "size": 680,
+          "gzip": 395,
+          "scopedStyles": true
+        },
+        {
+          "fileName": "hsqcy5gd.es5.js",
+          "outputs": [
+            "dist/stencil-app/hsqcy5gd.es5.js",
+            "www/build/stencil-app/hsqcy5gd.es5.js"
+          ],
+          "size": 1037,
+          "gzip": 490,
+          "target": "es5"
+        },
+        {
+          "fileName": "hsqcy5gd.sc.es5.js",
+          "outputs": [
+            "dist/stencil-app/hsqcy5gd.sc.es5.js",
+            "www/build/stencil-app/hsqcy5gd.sc.es5.js"
+          ],
+          "size": 1076,
+          "gzip": 500,
+          "target": "es5",
+          "scopedStyles": true
+        },
+        {
+          "fileName": "hsqcy5gd.js",
+          "outputs": [
+            "dist/esm/es5/hsqcy5gd.js"
+          ],
+          "size": 952,
+          "gzip": 450,
+          "target": "es5"
+        },
+        {
+          "fileName": "hsqcy5gd.sc.js",
+          "outputs": [
+            "dist/esm/es5/hsqcy5gd.sc.js"
+          ],
+          "size": 991,
+          "gzip": 461,
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/my-app/my-app.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    }
+  ],
+  "sourceGraph": {
+    "src/components/my-app/my-app.stories.tsx": [
+      "@storybook/addon-knobs",
+      "@storybook/html"
+    ],
+    "src/components/my-app/my-app.tsx": []
+  },
+  "collections": []
+}

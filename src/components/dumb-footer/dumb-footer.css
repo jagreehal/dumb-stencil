@@ -1,0 +1,14 @@
+:host {
+  font-family: sans-serif;
+}
+
+.c-footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.c-footer__copyright {
+  margin-top: 2rem;
+  text-align: center;
+}

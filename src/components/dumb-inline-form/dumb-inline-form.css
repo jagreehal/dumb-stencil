@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+}
+
+.c-inline-form {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.c-inline-form__input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.u-is-vishidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
