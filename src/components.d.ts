@@ -27,6 +27,9 @@ declare global {
 }
 
 import {
+  CardListItem,
+} from './components/dumb-card-list/dumb-card-list';
+import {
   PrimaryNavItem,
 } from './components/dumb-primary-nav/dumb-primary-nav';
 
@@ -72,7 +75,7 @@ declare global {
 
   namespace StencilComponents {
     interface DumbCardList {
-      'listItems': string;
+      'listItems': string | CardListItem[];
     }
   }
 
@@ -95,7 +98,7 @@ declare global {
   }
   namespace JSXElements {
     export interface DumbCardListAttributes extends HTMLAttributes {
-      'listItems'?: string;
+      'listItems'?: string | CardListItem[];
     }
   }
 }
@@ -281,6 +284,39 @@ declare global {
       'label'?: string;
       'method'?: string;
       'placeholder'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface DumbKitchenSink {
+
+    }
+  }
+
+  interface HTMLDumbKitchenSinkElement extends StencilComponents.DumbKitchenSink, HTMLStencilElement {}
+
+  var HTMLDumbKitchenSinkElement: {
+    prototype: HTMLDumbKitchenSinkElement;
+    new (): HTMLDumbKitchenSinkElement;
+  };
+  interface HTMLElementTagNameMap {
+    'dumb-kitchen-sink': HTMLDumbKitchenSinkElement;
+  }
+  interface ElementTagNameMap {
+    'dumb-kitchen-sink': HTMLDumbKitchenSinkElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'dumb-kitchen-sink': JSXElements.DumbKitchenSinkAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DumbKitchenSinkAttributes extends HTMLAttributes {
+
     }
   }
 }

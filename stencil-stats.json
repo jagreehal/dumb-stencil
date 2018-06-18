@@ -6,9 +6,9 @@
   "app": {
     "namespace": "DumbStencil",
     "fsNamespace": "dumb-stencil",
-    "components": 11,
-    "entries": 7,
-    "bundles": 42
+    "components": 12,
+    "entries": 8,
+    "bundles": 45
   },
   "options": {
     "minifyJs": true,
@@ -58,6 +58,11 @@
     },
     {
       "tag": "dumb-hero",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "dumb-kitchen-sink",
       "dependencies": [],
       "dependencyOf": []
     },
@@ -206,61 +211,61 @@
       ],
       "bundles": [
         {
-          "fileName": "mr22dmb3.js",
+          "fileName": "yjikuxzq.js",
           "outputs": [
-            "dist/dumb-stencil/mr22dmb3.js",
-            "www/build/dumb-stencil/mr22dmb3.js"
+            "dist/dumb-stencil/yjikuxzq.js",
+            "www/build/dumb-stencil/yjikuxzq.js"
           ],
-          "size": 1157,
-          "gzip": 527
+          "size": 1202,
+          "gzip": 540
         },
         {
-          "fileName": "mr22dmb3.sc.js",
+          "fileName": "yjikuxzq.sc.js",
           "outputs": [
-            "dist/dumb-stencil/mr22dmb3.sc.js",
-            "www/build/dumb-stencil/mr22dmb3.sc.js"
+            "dist/dumb-stencil/yjikuxzq.sc.js",
+            "www/build/dumb-stencil/yjikuxzq.sc.js"
           ],
-          "size": 1226,
-          "gzip": 545,
+          "size": 1271,
+          "gzip": 559,
           "scopedStyles": true
         },
         {
-          "fileName": "mr22dmb3.es5.js",
+          "fileName": "yjikuxzq.es5.js",
           "outputs": [
-            "dist/dumb-stencil/mr22dmb3.es5.js",
-            "www/build/dumb-stencil/mr22dmb3.es5.js"
+            "dist/dumb-stencil/yjikuxzq.es5.js",
+            "www/build/dumb-stencil/yjikuxzq.es5.js"
           ],
-          "size": 1868,
-          "gzip": 634,
+          "size": 1913,
+          "gzip": 651,
           "target": "es5"
         },
         {
-          "fileName": "mr22dmb3.sc.es5.js",
+          "fileName": "yjikuxzq.sc.es5.js",
           "outputs": [
-            "dist/dumb-stencil/mr22dmb3.sc.es5.js",
-            "www/build/dumb-stencil/mr22dmb3.sc.es5.js"
+            "dist/dumb-stencil/yjikuxzq.sc.es5.js",
+            "www/build/dumb-stencil/yjikuxzq.sc.es5.js"
           ],
-          "size": 1937,
-          "gzip": 650,
+          "size": 1982,
+          "gzip": 667,
           "target": "es5",
           "scopedStyles": true
         },
         {
-          "fileName": "mr22dmb3.js",
+          "fileName": "yjikuxzq.js",
           "outputs": [
-            "dist/esm/es5/mr22dmb3.js"
+            "dist/esm/es5/yjikuxzq.js"
           ],
-          "size": 1792,
-          "gzip": 600,
+          "size": 1837,
+          "gzip": 611,
           "target": "es5"
         },
         {
-          "fileName": "mr22dmb3.sc.js",
+          "fileName": "yjikuxzq.sc.js",
           "outputs": [
-            "dist/esm/es5/mr22dmb3.sc.js"
+            "dist/esm/es5/yjikuxzq.sc.js"
           ],
-          "size": 1861,
-          "gzip": 617,
+          "size": 1906,
+          "gzip": 632,
           "target": "es5",
           "scopedStyles": true
         }
@@ -427,6 +432,52 @@
       ],
       "encapsulations": [
         "shadow"
+      ]
+    },
+    {
+      "entryId": "entry:dumb-kitchen-sink",
+      "components": [
+        {
+          "tag": "dumb-kitchen-sink",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "xr1vrywk.js",
+          "outputs": [
+            "dist/dumb-stencil/xr1vrywk.js",
+            "www/build/dumb-stencil/xr1vrywk.js"
+          ],
+          "size": 193,
+          "gzip": 173
+        },
+        {
+          "fileName": "xr1vrywk.es5.js",
+          "outputs": [
+            "dist/dumb-stencil/xr1vrywk.es5.js",
+            "www/build/dumb-stencil/xr1vrywk.es5.js"
+          ],
+          "size": 404,
+          "gzip": 278,
+          "target": "es5"
+        },
+        {
+          "fileName": "xr1vrywk.js",
+          "outputs": [
+            "dist/esm/es5/xr1vrywk.js"
+          ],
+          "size": 328,
+          "gzip": 240,
+          "target": "es5"
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/dumb-kitchen-sink/dumb-kitchen-sink.js"
+      ],
+      "encapsulations": [
+        "none"
       ]
     },
     {
@@ -713,6 +764,7 @@
       "@storybook/html"
     ],
     "src/components/dumb-inline-form/dumb-inline-form.tsx": [],
+    "src/components/dumb-kitchen-sink/dumb-kitchen-sink.tsx": [],
     "src/components/dumb-logo/dumb-logo.stories.tsx": [
       "@storybook/html"
     ],

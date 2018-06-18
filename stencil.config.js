@@ -3,6 +3,9 @@ exports.config = {
     'last 2 versions',
     'IE 11'
   ],
+  copy: [{
+    src: 'examples'
+  }],
   namespace: 'dumb-stencil',
   outputTargets: [{
     type: 'www'
