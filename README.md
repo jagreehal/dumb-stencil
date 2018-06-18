@@ -10,7 +10,7 @@ See his [blog post](http://bradfrost.com/blog/post/dumb-react/) for more info.
 
 ## Differences
 
-All the components use shadow dom and are pre-rendered.
+All the components use shadow dom (but can't be pre-rendered just yet until a Stencil bug is fixed).
 
 No external libraries or tools in addition to Stencil.
 
