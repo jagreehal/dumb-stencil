@@ -537,61 +537,61 @@
       ],
       "bundles": [
         {
-          "fileName": "kqosepcc.js",
+          "fileName": "43ykit8a.js",
           "outputs": [
-            "dist/dumb-stencil/kqosepcc.js",
-            "www/build/dumb-stencil/kqosepcc.js"
+            "dist/dumb-stencil/43ykit8a.js",
+            "www/build/dumb-stencil/43ykit8a.js"
           ],
-          "size": 1026,
-          "gzip": 427
+          "size": 987,
+          "gzip": 429
         },
         {
-          "fileName": "kqosepcc.sc.js",
+          "fileName": "43ykit8a.sc.js",
           "outputs": [
-            "dist/dumb-stencil/kqosepcc.sc.js",
-            "www/build/dumb-stencil/kqosepcc.sc.js"
+            "dist/dumb-stencil/43ykit8a.sc.js",
+            "www/build/dumb-stencil/43ykit8a.sc.js"
           ],
-          "size": 1121,
-          "gzip": 444,
+          "size": 1082,
+          "gzip": 446,
           "scopedStyles": true
         },
         {
-          "fileName": "kqosepcc.es5.js",
+          "fileName": "43ykit8a.es5.js",
           "outputs": [
-            "dist/dumb-stencil/kqosepcc.es5.js",
-            "www/build/dumb-stencil/kqosepcc.es5.js"
+            "dist/dumb-stencil/43ykit8a.es5.js",
+            "www/build/dumb-stencil/43ykit8a.es5.js"
           ],
-          "size": 1423,
-          "gzip": 531,
+          "size": 1384,
+          "gzip": 539,
           "target": "es5"
         },
         {
-          "fileName": "kqosepcc.sc.es5.js",
+          "fileName": "43ykit8a.sc.es5.js",
           "outputs": [
-            "dist/dumb-stencil/kqosepcc.sc.es5.js",
-            "www/build/dumb-stencil/kqosepcc.sc.es5.js"
+            "dist/dumb-stencil/43ykit8a.sc.es5.js",
+            "www/build/dumb-stencil/43ykit8a.sc.es5.js"
           ],
-          "size": 1518,
-          "gzip": 549,
+          "size": 1479,
+          "gzip": 555,
           "target": "es5",
           "scopedStyles": true
         },
         {
-          "fileName": "kqosepcc.js",
+          "fileName": "43ykit8a.js",
           "outputs": [
-            "dist/esm/es5/kqosepcc.js"
+            "dist/esm/es5/43ykit8a.js"
           ],
-          "size": 1343,
-          "gzip": 495,
+          "size": 1304,
+          "gzip": 500,
           "target": "es5"
         },
         {
-          "fileName": "kqosepcc.sc.js",
+          "fileName": "43ykit8a.sc.js",
           "outputs": [
-            "dist/esm/es5/kqosepcc.sc.js"
+            "dist/esm/es5/43ykit8a.sc.js"
           ],
-          "size": 1438,
-          "gzip": 513,
+          "size": 1399,
+          "gzip": 517,
           "target": "es5",
           "scopedStyles": true
         }

@@ -6,13 +6,17 @@ Web component version of Brad Frosts' [Dumb React](https://github.com/bradfrost/
 
 See his [blog post](http://bradfrost.com/blog/post/dumb-react/) for more info.
 
+[Live example](http://dumb-stencil.surge.sh/)
+
 ## Differences
 
-Typescript as it's used by Stencil and PostCSS because who's got time for browser inconsistencies!
+All the components use shadow dom and are pre-rendered.
+
+No external libraries or tools in addition to Stencil.
 
 ## Stencil w/ Storybook Starter
 
-This example uses the HTML features of Storybook v4.
+This repo uses the HTML features of Storybook v4.
 
 ## Using This Repo
 
