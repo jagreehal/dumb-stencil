@@ -1,6 +1,6 @@
 # Dumb Stencil
 
-[![Build Status](https://travis-ci.org/jagreehal/dumb-stencil.svg?branch=master)](https://travis-ci.org/jagreehal/dumb-stencil)
+[![Build Status](https://travis-ci.org/jagreehal/dumb-stencil.svg?branch=master)](https://travis-ci.org/jagreehal/dumb-stencil) [![Greenkeeper badge](https://badges.greenkeeper.io/jagreehal/dumb-stencil.svg)](https://greenkeeper.io/)
 
 Web component version of Brad Frosts' [Dumb React](https://github.com/bradfrost/dumb-react) using [Stencil](https://stenciljs.com/).
 
